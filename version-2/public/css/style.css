@@ -358,13 +358,8 @@ input {
 
 .footer {
   background-color: #545341;
-  color: #dad9cb;
+  color: #DAD9CB;
   padding: 55px 150px;
-}
-.footer .container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 .footer__top {
   display: flex;
@@ -398,11 +393,11 @@ input {
 }
 .footer__info li i {
   font-size: 15px;
-  color: #dad9cb;
+  color: #DAD9CB;
 }
 .footer__info li span {
   font-size: 12px;
-  color: #dad9cb;
+  color: #DAD9CB;
 }
 .footer__nav {
   font-weight: lighter;
@@ -429,7 +424,7 @@ input {
 }
 .footer ul li a {
   text-decoration: none;
-  color: #dad9cb;
+  color: #DAD9CB;
   font-size: 16px;
 }
 .footer ul li a:hover {
@@ -524,8 +519,7 @@ input {
   }
   .footer__nav .row .col-sm-3 {
     width: 50%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
   }
   .footer__bottom p {
     font-size: 12px;
