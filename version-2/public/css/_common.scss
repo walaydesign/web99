@@ -373,7 +373,7 @@ main {
 .footer {
     background-color: $main-color;
     color: $third-color;
-    padding: 55px 150px;
+    padding: 55px 0px;
   
     &__top {
       margin-bottom: 40px;
@@ -532,4 +532,4 @@ main {
           }
         }
       }
-      
+}     
