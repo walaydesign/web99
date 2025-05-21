@@ -3,13 +3,16 @@
   width: 100%;
   height: auto;
 
-  .banner-image {
+  &-image { 
     position: relative;
     width: 100%;
-    height: 659px;
+    padding-bottom: 35%;
     overflow: hidden;
 
     img {
+      position: absolute; 
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -53,7 +56,6 @@
   }
 }
 
-
 .breadcrumb-nav {
   background-color: rgba(84, 83, 65, 0.35); 
   position: relative; 
@@ -67,12 +69,12 @@
     display: flex;
     list-style: none;
 
-    .breadcrumb-item {
+    &-item {
       font-size: 20px;
       font-weight: 300;
       line-height: 28px;
 
-      + .breadcrumb-item::before {
+      + &-item::before {
         content: ">";
         padding: 0 8px;
         color: white;
@@ -94,66 +96,64 @@
   }
 }
 
+.about-nav {
+  padding: 50px 0;
+  text-align: center;
+
+  .container {
+    max-width: 1200px;
+  }
+
+  a {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 40px;
+    color: $main-color;
+    text-decoration: none;
+    margin: 0 30px;
+
+    &.active {
+      border-bottom: 2px solid $main-color; 
+    }
+  
+    &:hover {
+      border-bottom: 2px solid $main-color;
+    }
+  }
+
+  .separator {
+    color: $main-color;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 40px;
+  }
+}
 
 .about {
-  padding: 150px 0;
+  padding: 0 0 50px 0;
   background-color: none;
 
   .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-
-    .title {
-      text-align: center;
-      margin-bottom: 100px;
-
-      a {
-        font-size: 26px;
-        font-weight: 300;
-        line-height: 40px;
-        color: $main-color;
-        text-decoration: none;
-        margin: 0 30px;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-
-      .col-lg-6 {
-        width: 100%;
-
-        @media (min-width: 992px) {
-          width: 50%;
-        }
-      }
-
-      .about_pic {
+    
+      &_pic {
         img {
           width: 100%;
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         }
       }
 
-      .about_text {
+      &_text {
         @media (min-width: 992px) {
           padding: 0 40px;
         }
 
         p {
-          font-size: 16px;
           line-height: 30px;
           font-weight: 300;
           color: $color-3a;
         }
       }
-    }
+    
   }
 }
