@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./public/css/style.css">
     <script src="https://kit.fontawesome.com/cad8ffe7fc.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header class="header">
         <div class="header_content d-flex align-items-center justify-content-between">
@@ -107,53 +108,80 @@
     </header>    
 
     <main>
+        <!-- Hero Section-->
         <section class="banner">
             <div class="banner-image">
-              <img src="./public/img/ex-1.png" alt="banner_img" />
-              <div class="overlay"></div> 
-              <div class="banner-title">
-                <h1>關於我們 <span>about us</span></h1>
-              </div>
+                <img src="./public/img/ex-1.png" alt="">
             </div>
-          
-            <nav aria-label="breadcrumb" class="breadcrumb-nav">
-                <div class="container">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">首頁</a></li>
-                        <li class="breadcrumb-item"><a href="#">關於我們</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">關於我們</li>
-                    </ol>
-                </div>
-            </nav>
+            <div banner-title>
+                <h1>最新消息</h1>
+                <p>news</p>
+            </div>
+        </section>
 
-        </section>
-          
-        <nav class="nav-common">
-            <div class="container">
-                <a href="http://" class="active">關於我們</a>
-                <span class="separator">&vert;</span>
-                <a href="http://">公司介紹</a>
+        <!-- Breadcrumb -->
+         <div class="breadcrumb">
+            <a href="#">首頁</a> &gt; <a href="#">最新消息</a> &gt; <span>分類一</span>
+        </div>
+        
+        <!-- Category Tabs-->
+         <div class="tabs">
+            <a href="">分類一</a>
+            <a href="">分類二</a>
+            <a href="">分類三</a>
+            <a href="">分類四</a>
+            <a href="">分類五</a>
+         </div>
+
+        <!-- News List-->
+         <section class="news-list container">
+            <div class="news-card">
+                <img src="./public/img/ex-1.png" alt="">
+                <div class="date">10/11 2022</div>
+                <h3>標題 標題 標題 標題</h3>
             </div>
-        </nav>
-        <section class="about">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about_pic">
-                            <img src="./public/img/ex-5.png" alt="公司介紹圖片" class="img-fluid w-100 h-auto">
-                          </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about_text">
-                            <p>
-                                直以高代見苦媽成河；早經保施育檢太野？報足都灣大都：一此公造居？治的著土經。從形海但又學爭外的斷人一社養年取過空開我不同你不？<br>
-                                美河足著館。經體使制不著輪時，愛病裡他視著風且。輕長有金自確們，已員北看把得改老投……排水的，教好星竟民花影進。後度以非提題起們沒們爸朋科雖精、出分景現麼家調素部分了路寫間爸奇量城像是解媽，人魚水無，陸政成？綠望的半少得接品發重小我！
-                              </p>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="news-card">
+                <img src="./public/img/ex-2.png" alt="">
+                <div class="date">10/11 2022</div>
+                <h3>標題 標題 標題 標題</h3>
             </div>
-        </section>
+
+            <div class="news-card">
+                <img src="./public/img/ex-3.png" alt="">
+                <div class="date">10/11 2022</div>
+                <h3>標題 標題 標題 標題</h3>
+            </div>
+
+            <div class="news-card">
+                <img src="./public/img/ex-4.png" alt="">
+                <div class="date">10/11 2022</div>
+                <h3>標題 標題 標題 標題</h3>
+            </div>
+
+            <div class="news-card">
+                <img src="./public/img/ex-5.png" alt="">
+                <div class="date">10/11 2022</div>
+                <h3>標題 標題 標題 標題</h3>
+            </div>
+
+            <div class="news-card">
+                <img src="./public/img/ex-6.png" alt="">
+                <div class="date">10/11 2022</div>
+                <h3>標題 標題 標題 標題</h3>
+            </div>
+         </section>
+
+         <!-- Pagination -->
+         <div class="pagination">
+            <a href="#">上一頁</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">下一頁</a>
+        </div>
     </main>
 
     <footer class="footer">
@@ -232,7 +260,6 @@
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/common.js"></script>
-
-
 </body>
+
 </html>
