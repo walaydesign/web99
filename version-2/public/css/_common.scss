@@ -52,13 +52,14 @@ input {
 .header {
   color: #fff;
   height: 85px;
-  width: 100%;
-  max-width: 1140px;
+  // width: 100%;
+  width: 1140px;
   position: fixed;
   top: 25px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
+  transition: $transition-common;
 
   &_right {
     height: 100%;
@@ -317,8 +318,14 @@ input {
     }
   }
 
+  &.scrolldown {
+    width: 100%;
+    top: 0;
+  }
+
   @media screen and (max-width: 1140px) {
     top: 0;
+    width: 100%;
   }
 
   @media screen and (max-width: 991px) {
@@ -689,30 +696,50 @@ main {
   padding-bottom: 103px;
   text-align: center;
 
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   a {
     font-size: 26px;
     font-weight: 300;
     line-height: 40px;
     color: $main-color;
-    text-decoration: none;
     margin: 0 30px;
     padding-bottom: 4.5px;
+    position: relative;
+    transition: $transition-common;
+    border-bottom: 1px solid transparent;
 
     &.active {
-      border-bottom: 1px solid $main-color;
+      border-color: $main-color;
     }
 
-    &:hover {
-      border-bottom: 1px solid $main-color;
+    &:not(.active) {
+      &:hover {
+        border-color: $main-color;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 32px;
+      background-color: $color-92;
+      top: 50%;
+      right: -30px;
+      transform: translate(50%, -50%);
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
     }
   }
 
-  .separator {
-    color: $main-color;
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 40px;
-  }
 }
 
 @media (max-width: 991px) {

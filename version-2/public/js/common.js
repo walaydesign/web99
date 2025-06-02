@@ -30,3 +30,18 @@ $(".header_nav_main>li.drop").click(function(){
         $(this).siblings("li.drop").find(".header_nav_second").slideUp(500);
     }
 })
+
+resize(); 
+$(window).on("resize scroll",function(){
+    resize();  
+})
+
+function resize() {
+    // header
+    if($(window).scrollTop()>0){
+        $(".header").addClass("scrolldown");
+    }else {
+        $(".header").removeClass("scrolldown");
+    }
+
+}
