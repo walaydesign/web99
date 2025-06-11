@@ -548,6 +548,7 @@ input {
   font-size: 60px;
   font-weight: 700;
   margin: 0;
+  white-space: nowrap;
 }
 .banner-image .banner-title h1 span {
   font-family: Lato;
@@ -594,8 +595,7 @@ input {
 .breadcrumb-nav .breadcrumb-item:first-child {
   padding-left: 0;
 }
-
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-nav .breadcrumb-item + .breadcrumb-item::before {
   content: "";
   color: #fff;
   background-image: url(../img/Vector.svg);
@@ -658,6 +658,117 @@ input {
   .nav-common a {
     font-size: 20px;
   }
+}
+@media (max-width: 575px) {
+  .nav-common .container a {
+    margin: 0 20px;
+  }
+}
+
+.news .card {
+  margin-left: 39px;
+  margin-bottom: 60px;
+}
+.news .card-body {
+  padding: 13px 21px 16px 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+.news .card-time {
+  width: 56px;
+}
+.news .card-date {
+  font-size: 22px;
+  font-weight: 400;
+  color: #898400;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.news .card-date .top,
+.news .card-date .bottom {
+  display: block;
+}
+.news .card-date .top {
+  transform: translateY(-30%);
+}
+.news .card-date .bottom {
+  transform: translateY(30%);
+}
+.news .card-date .slash {
+  font-weight: 200;
+  display: block;
+  align-items: center;
+  transform: rotate(5deg);
+  line-height: 0.5;
+  margin: 2px 0;
+}
+.news .card-year {
+  font-size: 22px;
+  font-weight: 300;
+  color: #898400;
+  margin: 0;
+}
+.news .card-text {
+  font-size: 22px;
+  font-weight: 500;
+}
+.news:nth-child(1) .card, .news:nth-child(4) .card {
+  margin-left: 0;
+}
+
+.pagination {
+  justify-content: center;
+  padding-bottom: 74px;
+  gap: 10px;
+}
+.pagination .page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  color: #929292;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  font-size: 18px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+}
+.pagination .page-link.active {
+  color: #545341;
+  background-color: transparent;
+  border: 2px solid #DAD9CB;
+}
+.pagination .page-link.back {
+  border: 0;
+  width: auto;
+  height: auto;
+}
+.pagination .page-link.back img {
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.5s;
+}
+.pagination .page-link.next {
+  border: 0;
+  width: auto;
+  height: auto;
+}
+.pagination .page-link.next img {
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.5s;
 }
 
 .banner-home {

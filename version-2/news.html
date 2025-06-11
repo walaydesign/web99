@@ -1,265 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web99</title><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,800;1,900;1,1000&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./public/css/style.css">
-    <script src="https://kit.fontawesome.com/cad8ffe7fc.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web99</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,800;1,900;1,1000&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/cad8ffe7fc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="header">
-        <div class="header_content d-flex align-items-center justify-content-between">
-            <a href="" class="header_logo"><img src="./public/img/logo.svg" alt=""></a>
-            <div class="header_right">
-                <nav class="header_nav">
-                    <ul class="header_nav_main d-lg-flex">
-                        <li class="drop">
-                            <a>
-                                <span>最新消息</span>
-                                <img src="./public/img/icon_arrow_down.svg" alt="">
-                            </a>
-                            <ul class="header_nav_second">
-                                <li><a href="">分類一</a></li>
-                                <li><a href="">分類二</a></li>
-                                <li><a href="">分類三</a></li>
-                            </ul>
-                        </li>
-                        <li class="drop">
-                            <a>
-                                <span>關於我們</span>
-                                <img src="./public/img/icon_arrow_down.svg" alt="">
-                            </a>
-                            <ul class="header_nav_second">
-                                <li><a href="">關於我們</a></li>
-                                <li><a href="">公司介紹</a></li>
-                            </ul>
-                        </li>
-                        <li class="drop">
-                            <a>
-                                <span>服務介紹</span>
-                                <img src="./public/img/icon_arrow_down.svg" alt="">
-                            </a>
-                            <ul class="header_nav_second">
-                                <li><a href="">分類一</a></li>
-                                <li><a href="">分類二</a></li>
-                                <li><a href="">分類三</a></li>
-                            </ul>
-                        </li>
-                        <li class="drop">
-                            <a>
-                                <span>產品介紹</span>
-                                <img src="./public/img/icon_arrow_down.svg" alt="">
-                            </a>
-                            <ul class="header_nav_second">
-                                <li><a href="">分類一</a></li>
-                                <li><a href="">分類二</a></li>
-                                <li><a href="">分類三</a></li>
-                            </ul>
-                        </li>
-                        <li class="drop">
-                            <a>
-                                <span>文章資訊</span>
-                                <img src="./public/img/icon_arrow_down.svg" alt="">
-                            </a>
-                            <ul class="header_nav_second">
-                                <li><a href="">分類一</a></li>
-                                <li><a href="">分類二</a></li>
-                                <li><a href="">分類三</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">檔案下載</a>
-                        </li>
-                        <li>
-                            <a href="">聯絡我們</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header_search d-flex justify-content-end">
-                    <div class="header_search_inner d-flex align-items-center justify-content-end">
-                        <div class="header_search_hide d-flex align-items-center">
-                            <div class="header_search_close d-lg-flex d-none">
-                                <div class="header_search_close_inner"><img src="./public/img/icon_cross.svg" alt=""></div>
-                            </div>
-                            <input type="text" placeholder="關鍵字搜尋">
-                        </div>
-                        <div class="header_search_btn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M21 21L16.65 16.65" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                    </div>
+      <div
+        class="header_content d-flex align-items-center justify-content-between"
+      >
+        <a href="" class="header_logo"
+          ><img src="./public/img/logo.svg" alt=""
+        /></a>
+        <div class="header_right">
+          <nav class="header_nav">
+            <ul class="header_nav_main d-lg-flex">
+              <li class="drop">
+                <a>
+                  <span>最新消息</span>
+                  <img src="./public/img/icon_arrow_down.svg" alt="" />
+                </a>
+                <ul class="header_nav_second">
+                  <li><a href="">分類一</a></li>
+                  <li><a href="">分類二</a></li>
+                  <li><a href="">分類三</a></li>
+                </ul>
+              </li>
+              <li class="drop">
+                <a>
+                  <span>關於我們</span>
+                  <img src="./public/img/icon_arrow_down.svg" alt="" />
+                </a>
+                <ul class="header_nav_second">
+                  <li><a href="">關於我們</a></li>
+                  <li><a href="">公司介紹</a></li>
+                </ul>
+              </li>
+              <li class="drop">
+                <a>
+                  <span>服務介紹</span>
+                  <img src="./public/img/icon_arrow_down.svg" alt="" />
+                </a>
+                <ul class="header_nav_second">
+                  <li><a href="">分類一</a></li>
+                  <li><a href="">分類二</a></li>
+                  <li><a href="">分類三</a></li>
+                </ul>
+              </li>
+              <li class="drop">
+                <a>
+                  <span>產品介紹</span>
+                  <img src="./public/img/icon_arrow_down.svg" alt="" />
+                </a>
+                <ul class="header_nav_second">
+                  <li><a href="">分類一</a></li>
+                  <li><a href="">分類二</a></li>
+                  <li><a href="">分類三</a></li>
+                </ul>
+              </li>
+              <li class="drop">
+                <a>
+                  <span>文章資訊</span>
+                  <img src="./public/img/icon_arrow_down.svg" alt="" />
+                </a>
+                <ul class="header_nav_second">
+                  <li><a href="">分類一</a></li>
+                  <li><a href="">分類二</a></li>
+                  <li><a href="">分類三</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">檔案下載</a>
+              </li>
+              <li>
+                <a href="">聯絡我們</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header_search d-flex justify-content-end">
+            <div
+              class="header_search_inner d-flex align-items-center justify-content-end"
+            >
+              <div class="header_search_hide d-flex align-items-center">
+                <div class="header_search_close d-lg-flex d-none">
+                  <div class="header_search_close_inner">
+                    <img src="./public/img/icon_cross.svg" alt="" />
+                  </div>
                 </div>
+                <input type="text" placeholder="關鍵字搜尋" />
+              </div>
+              <div class="header_search_btn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M21 21L16.65 16.65"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
             </div>
-            <div class="header_menu d-lg-none">
-                <div class="bar top"></div>
-                <div class="bar center"></div>
-                <div class="bar bottom"></div>
-            </div>
+          </div>
         </div>
-    </header>    
+        <div class="header_menu d-lg-none">
+          <div class="bar top"></div>
+          <div class="bar center"></div>
+          <div class="bar bottom"></div>
+        </div>
+      </div>
+    </header>
 
     <main>
-        <!-- Hero Section-->
-        <section class="banner">
-            <div class="banner-image">
-                <img src="./public/img/ex-1.png" alt="">
-            </div>
-            <div banner-title>
-                <h1>最新消息</h1>
-                <p>news</p>
-            </div>
-        </section>
-
-        <!-- Breadcrumb -->
-         <div class="breadcrumb">
-            <a href="#">首頁</a> &gt; <a href="#">最新消息</a> &gt; <span>分類一</span>
+      <section class="banner">
+        <div class="banner-image">
+          <img src="./public/img/ex-1.png" alt="banner_img" />
+          <div class="overlay"></div>
+          <!-- 改 -->
+          <div class="banner-title">
+            <h1>最新消息<span>news</span></h1>
+          </div>
         </div>
-        
-        <!-- Category Tabs-->
-         <div class="tabs">
-            <a href="">分類一</a>
-            <a href="">分類二</a>
-            <a href="">分類三</a>
-            <a href="">分類四</a>
-            <a href="">分類五</a>
-         </div>
 
-        <!-- News List-->
-         <section class="news-list container">
-            <div class="news-card">
-                <img src="./public/img/ex-1.png" alt="">
-                <div class="date">10/11 2022</div>
-                <h3>標題 標題 標題 標題</h3>
-            </div>
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+          <div class="container">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">首頁</a></li>
+              <li class="breadcrumb-item"><a href="#">最新消息</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                分類一
+              </li>
+            </ol>
+          </div>
+        </nav>
+      </section>
 
-            <div class="news-card">
-                <img src="./public/img/ex-2.png" alt="">
-                <div class="date">10/11 2022</div>
-                <h3>標題 標題 標題 標題</h3>
-            </div>
-
-            <div class="news-card">
-                <img src="./public/img/ex-3.png" alt="">
-                <div class="date">10/11 2022</div>
-                <h3>標題 標題 標題 標題</h3>
-            </div>
-
-            <div class="news-card">
-                <img src="./public/img/ex-4.png" alt="">
-                <div class="date">10/11 2022</div>
-                <h3>標題 標題 標題 標題</h3>
-            </div>
-
-            <div class="news-card">
-                <img src="./public/img/ex-5.png" alt="">
-                <div class="date">10/11 2022</div>
-                <h3>標題 標題 標題 標題</h3>
-            </div>
-
-            <div class="news-card">
-                <img src="./public/img/ex-6.png" alt="">
-                <div class="date">10/11 2022</div>
-                <h3>標題 標題 標題 標題</h3>
-            </div>
-         </section>
-
-         <!-- Pagination -->
-         <div class="pagination">
-            <a href="#">上一頁</a>
-            <a href="#" class="active">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">下一頁</a>
+      <nav class="nav-common">
+        <div class="container">
+          <a class="active">分類一</a>
+          <a href="">分類二</a>
+          <a href="">分類三</a>
+          <a href="">分類四</a>
+          <a href="">分類五</a>
         </div>
+      </nav>
+
+      <div class="news">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card">
+                <img src="./public/img/news-1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <div class="card-time">
+                        <p class="card-date">
+                            <span class="top">10</span>
+                          <span class="slash">/</span>
+                          <span class="bottom">11</span>
+                        </p>
+                        <p class="card-year">2022</p>
+                    </div>
+                    <p class="card-text">
+                        標題標題標題標題標題標題標題
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                  <img src="./public/img/news-2.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <div class="card-time">
+                        <p class="card-date">
+                            <span class="top">10</span>
+                          <span class="slash">/</span>
+                          <span class="bottom">11</span>
+                        </p>
+                        <p class="card-year">2022</p>
+                    </div>
+                    <p class="card-text">
+                      標題標題標題標題標題標題標題
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                  <img src="./public/img/news-3.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <div class="card-time">
+                        <p class="card-date">
+                            <span class="top">10</span>
+                          <span class="slash">/</span>
+                          <span class="bottom">11</span>
+                        </p>
+                        <p class="card-year">2022</p>
+                    </div>
+                    <p class="card-text">
+                      標題標題標題標題標題標題標題
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                  <img src="./public/img/news-4.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <div class="card-time">
+                        <p class="card-date">
+                            <span class="top">10</span>
+                          <span class="slash">/</span>
+                          <span class="bottom">11</span>
+                        </p>
+                        <p class="card-year">2022</p>
+                    </div>
+                    <p class="card-text">
+                      標題標題標題標題標題標題標題
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                  <img src="./public/img/news-5.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <div class="card-time">
+                        <p class="card-date">
+                            <span class="top">10</span>
+                          <span class="slash">/</span>
+                          <span class="bottom">11</span>
+                        </p>
+                        <p class="card-year">2022</p>
+                    </div>
+                    <p class="card-text">
+                      標題標題標題標題標題標題標題
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                  <img src="./public/img/news-6.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <div class="card-time">
+                        <p class="card-date">
+                            <span class="top">10</span>
+                          <span class="slash">/</span>
+                          <span class="bottom">11</span>
+                        </p>
+                        <p class="card-year">2022</p>
+                    </div>
+                    <p class="card-text">
+                      標題標題標題標題標題標題標題
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link back" href="#" aria-label="Previous">
+                    <img src="./public/img/arrow-left.png" alt="">
+                    <span aria-hidden="true">上一頁</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item">
+                <a class="page-link next" href="#" aria-label="Next">
+                  <span aria-hidden="true">下一頁</span>
+                  <img src="./public/img/arrow-right.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
-        <div class="container">
-          <div class="footer__top row">
-            <div class="footer__contact col-lg-6 col-12">
-                <div class="footer__logo">
-                    <img src="./public/img/logo.svg" alt="logo" />
-                </div>
-                <div>
-                    <ul class="footer__info">
-                        <li><i class="fas fa-phone"></i><span>04-2221-1989</span></li>
-                        <li class="address"><i class="fas fa-map-marker-alt"></i><span>402 臺中市北區一中街96號</span></li>
-                        <li><i class="fas fa-envelope"></i><span>123@gmail.com</span></li>
-                        <li><i class="fas fa-fax" class="fax"></i><span>0966-588-797</span></li>
-                    </ul>  
-                </div>        
-                </div>
-      
-                <div class="footer__nav col-lg-6 col-12">
-                    <div class="row">
-                        <div class="col-sm-3 col-6">
-                            <ul>
-                                <li><a href="./about.html">關於我們</a></li>
-                                <li><a href="./news_list.html">最新消息</a></li>
-                                <li><a href="./info_list.html">文章資訊</a></li>
-                                <li><a href="./product_list.html">產品介紹</a></li>
-                                <li><a href="./service.html">服務項目</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-3 col-6">
-                            <ul>
-                                <li><a href="./about.html">關於我們</a></li>
-                                <li><a href="./news_list.html">最新消息</a></li>
-                                <li><a href="./info_list.html">文章資訊</a></li>
-                                <li><a href="./product_list.html">產品介紹</a></li>
-                                <li><a href="./service.html">服務項目</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-3 col-6">
-                           <ul>
-                                <li><a href="./about.html">關於我們</a></li>
-                                <li><a href="./news_list.html">最新消息</a></li>
-                                <li><a href="./info_list.html">文章資訊</a></li>
-                                <li><a href="./product_list.html">產品介紹</a></li>
-                                <li><a href="./service.html">服務項目</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-3 col-6">
-                            <ul>
-                                <li><a href="./about.html">關於我們</a></li>
-                                <li><a href="./news_list.html">最新消息</a></li>
-                                <li><a href="./info_list.html">文章資訊</a></li>
-                                <li><a href="./product_list.html">產品介紹</a></li>
-                                <li><a href="./service.html">服務項目</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer__top row">
+          <div class="footer__contact col-lg-6 col-12">
+            <div class="footer__logo">
+              <img src="./public/img/logo.svg" alt="logo" />
             </div>
-      
-            <div class="footer__bottom">
-                <p>Copyright © Web99 All Right Reserved. 網頁設計：Web99</p>
-                <div class="footer__social">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-line"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-                  <a href="#"><i class="fas fa-envelope"></i></a>
-                </div>
-              </div>              
+            <div>
+              <ul class="footer__info">
+                <li><i class="fas fa-phone"></i><span>04-2221-1989</span></li>
+                <li class="address">
+                  <i class="fas fa-map-marker-alt"></i
+                  ><span>402 臺中市北區一中街96號</span>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i><span>123@gmail.com</span>
+                </li>
+                <li>
+                  <i class="fas fa-fax" class="fax"></i
+                  ><span>0966-588-797</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__nav col-lg-6 col-12">
+            <div class="row">
+              <div class="col-sm-3 col-6">
+                <ul>
+                  <li><a href="./about.html">關於我們</a></li>
+                  <li><a href="./news_list.html">最新消息</a></li>
+                  <li><a href="./info_list.html">文章資訊</a></li>
+                  <li><a href="./product_list.html">產品介紹</a></li>
+                  <li><a href="./service.html">服務項目</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3 col-6">
+                <ul>
+                  <li><a href="./about.html">關於我們</a></li>
+                  <li><a href="./news_list.html">最新消息</a></li>
+                  <li><a href="./info_list.html">文章資訊</a></li>
+                  <li><a href="./product_list.html">產品介紹</a></li>
+                  <li><a href="./service.html">服務項目</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3 col-6">
+                <ul>
+                  <li><a href="./about.html">關於我們</a></li>
+                  <li><a href="./news_list.html">最新消息</a></li>
+                  <li><a href="./info_list.html">文章資訊</a></li>
+                  <li><a href="./product_list.html">產品介紹</a></li>
+                  <li><a href="./service.html">服務項目</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3 col-6">
+                <ul>
+                  <li><a href="./about.html">關於我們</a></li>
+                  <li><a href="./news_list.html">最新消息</a></li>
+                  <li><a href="./info_list.html">文章資訊</a></li>
+                  <li><a href="./product_list.html">產品介紹</a></li>
+                  <li><a href="./service.html">服務項目</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="footer__bottom">
+          <p>Copyright © Web99 All Right Reserved. 網頁設計：Web99</p>
+          <div class="footer__social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-line"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/common.js"></script>
-</body>
-
+  </body>
 </html>
